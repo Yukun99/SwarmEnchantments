@@ -1,0 +1,133 @@
+SplitSouls:
+  Messages:
+    ItemNoSoulTracker: '&c&l(!) &r&eYou must have an weapon with a Soul Tracker to
+      do this'
+    NoSouls: '&c&l(!) &r&eYou need to have captured Souls to do this command'
+    Split: '&e&l(!) &r&eYour Soul Gem has been split into two gems successfully'
+    SplitLegendary: '&6&l-%souls% Legendary Souls'
+    SplitUltimate: '&e-%souls% Ultimate Souls'
+    SplitElite: '&b-%souls% Elite Souls'
+    SplitUnique: '&a-%souls% Unique Souls'
+    SplitSimple: '&f-%souls% Simple Souls'
+    AddSoulGems: '&a&l+%souls% Soul(s)'
+SoulTrackers:
+  Messages:
+    Delay: '&c&l(!) &r&c'
+    Obtain: '&7You obtained a %soulTrackerRarity%!'
+  Simple:
+    ApplyLore: '&f&lSouls Harvested: %souls%'
+    Name: '&f&lSimple Soul Tracker'
+    Lore1: '&7Apply to weapons to start tracking'
+    Lore2: '&f&lSimple Souls &r&7collected from kills.'
+  Unique:
+    ApplyLore: '&a&lSouls Harvested: %souls%'
+    Name: '&a&lUnique Soul Tracker'
+    Lore1: '&7Apply to weapons to start tracking'
+    Lore2: '&a&lUnique Souls &r&7collected from kills'
+  Elite:
+    ApplyLore: '&b&lSouls Harvested: %souls%'
+    Name: '&b&lElite Soul Tracker'
+    Lore1: '&7Apply to weapons to start tracking'
+    Lore2: '&b&lElite Souls &r&7collected from kills'
+  Ultimate:
+    ApplyLore: '&e&lSouls Harvested: %souls%'
+    Name: '&e&lUltimate Soul Tracker'
+    Lore1: '&7Apply to weapons to start tracking'
+    Lore2: '&e&lUltimate Souls &r&7collected from kills'
+  Legendary:
+    ApplyLore: '&6&lSouls Harvested: %souls%'
+    Name: '&6&lLegendary Soul Tracker'
+    Lore1: '&7Apply to weapons to start tracking'
+    Lore2: '&6&lLegendary Souls &r&7collected from kills'
+SoulGemOptions:
+  Name: '&c&lSoul Gem [&6%souls%&c&l]'
+  Lore:
+    - '&c&l* &r&cClick this item to activate &nSoul Mode'
+    - '&7While in "Soul Mode" your ACTIVE god tier'
+    - '&7enchantments will activate and drain souls'
+    - '&7for as long as  this mode is enabled'
+    - ''
+    - '&c&l* &r&7Use &c&n/splitsouls&r &7with this item'
+    - '&7to split souls off of it'
+    - ''
+    - '&c&l* &r&7Stack other &cSoul Gems &7on top of this'
+    - '&7one to combine their soul counts'
+  Messages:
+    ObtainMessage: '&7You obtained a &c&lSoul Gem!'
+SoulMode:
+  Messages:
+    Activate1: '&a&l** SOUL MODE: &nON&r &a&l**'
+    Activate2: '&7Active soul enchantments will now drain soul gems'
+    Deactivate1: '&c&l** SOUL MODE: &nOFF&r &c&l**'
+    Deactivate2: '&7Soul enchantments will no longer drain soul gems'
+TransmogOptions:
+  Name: '&e&lTransmog Scroll'
+  Lore:
+    - '&e&oPlace scroll on item to apply.'
+    - ''
+    - '&7Organizes enchants by &e&nrarity&r&7 on item'
+    - '&7and adds the &blore &acount &7to name.'
+RankQuestOptions:
+  Name: '%rank% &bQuest &7(Right Click)'
+  CdName: '%rank% &bQuest <%time%s>'
+  CdLore:
+    - '&7at any time, the quest timer resets.'
+    - '&c&lWARNING: &r&7If you leave the &cWarzone&7'
+    - ''
+    - '&7runs out to receive your %rank%'
+    - '&7You must survive until the quest timer'
+    - ''
+    - '&7receive a %rankvoucher%'
+    - '&7to complete this Rank Quest and'
+    - '&7Survive in the warzone long enough'
+    - '&b&lRank Quest Started!'
+  Lore:
+    - '&7at any time, the quest timer resets.'
+    - '&c&lWARNING: &r&7If you leave the &cWarzone&7'
+    - ''
+    - '&7runs out to receive your %rank%'
+    - '&7You must survive until the quest timer'
+    - '&f&lright-click &r&7this item inside the &cWarzone.'
+    - '&f&lUSE: &r&7To begin this rank quest,'
+    - ''
+    - '&7receive a %rankvoucher%'
+    - '&7to complete this Rank Quest and'
+    - '&7Survive in the warzone long enough'
+  BeginMessage:
+    - ''
+    - '%rankvoucher%&7!'
+    - '&7timer on your Rank Quest Item reaches <0s> to claim your'
+    - '&7You have started your %rank% &bQuest&7! Survive until the'
+    - '&b&l*** &l%rank% &b&lQUEST STARTED ***'
+    - ''
+  BeginAllMessage:
+    - ''
+    - '&7of getting his %rank% &bQuest&7!'
+    - '&c&lWARZONE&r&7 before the &bRank Quest Item &7reaches <0s> to have a chance'
+    - '&7%player has started a %rank% &bQuest&7! Find him/her in the'
+    - '&b&l*** &l%rank% &b&lQUEST STARTED BY %player%***'
+    - ''
+  SoldierBee:
+    Rank: '&dSoldier&eBee' #Name of the rank you want to put
+    Voucher: #Settings for rank voucher
+      Name: '&b&lRANK &e"&d&lSoldier &e&lBee&r&e" &7(Right Click)'
+      Lore:
+        - '&7on the &cFactions &7server!'
+        - '&7get the &dSoldier&eBee &7rank'
+        - '&7Use this item to'
+  Wasp:
+    Rank: '&0Wa&esp'
+    Voucher:
+      Name: '&b&lRANK &e"&0&lWa&e&lsp&r&e" &7(Right Click)'
+      Lore:
+        - '&7on the &cFactions &7server!'
+        - '&7get the &0Wa&esp &7rank'
+        - '&7Use this item to'
+  QueenBee:
+    Rank: '&6Queen&eBee'
+    Voucher:
+      Name: ''
+      Lore:
+        - '&7on the &cFactions &7server!'
+        - '&7get the &6Queen&eBee &7rank'
+        - '&7Use this item to'

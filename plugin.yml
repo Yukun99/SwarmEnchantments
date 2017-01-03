@@ -1,0 +1,28 @@
+name: CrazyEnchantments
+author: BadBones69, xu_yukun
+main: me.BadBones69.CrazyEnchantments.Main
+version: 1.7.3.3
+depend: [Vault]
+softdepend: [Factions, WorldEdit, SilkSpawners, Feudal, ASkyBlock, CoreProtect]
+website: https://www.spigotmc.org/resources/16470/
+description: >
+             A Plugin full of Crazy Enchantments.
+commands:
+  crazyenchantments:
+    description: Opens the Enchanter GUI.
+    aliases: [ce, enchanter, cenchanter, crazyenchant, cenchants]
+  tinkerer:
+    description: Opens the Tinker GUI.
+    aliases: [tinker, tk]
+  blacksmith:
+    description: Opens the Black Smith GUI.
+    aliases: [bsmith, blacks, bs]
+  givedp:
+    description: Gives items to players.
+    aliases: [gdp, dp]
+  splitsouls:
+    description: Splits souls.
+    aliases: [ssouls, splits, sps]
+  gkitz:
+    description: Opens the GKitz GUI.
+    aliases: [gkit, gkits]

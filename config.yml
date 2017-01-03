@@ -1,0 +1,314 @@
+Settings:
+  BloodDamageParticles: 'on'
+  GoldenAppleSickness:
+    Enabled: true
+    TimeInSeconds: 60
+  Prefix: '&8[&aCrazyEnchants&8]: ' #The prefix in the msgs
+  InvName: '&4&l&nCrazy Enchanter' #The name of the /CE inventory
+  GUISize: 27 #The size of the GUI, Must be a factor of 9
+  EnchantmentBookLore:
+    - '&7Drag book and drop on Item.'
+    - '&7Right click for more Info.'
+  LostBook:
+    Item: '340'
+    Name: '&8&l&nA Lost Book'
+    Lore:
+      - '&7This book has been lost for centuries'
+      - '&7It is said to be an enchantment book from %Category%'
+      - '&7But you must clean it off to find out what kind it is.'
+      - '&7&l(&6&l!&7&l) &7Right Click to clean off.'
+  ProtectionCrystal:
+    InGUI: False #If its in the GUI.
+    Slot: 1 #Slot it is in
+    Item: '388' #Item it is
+    Glowing: True #If it is enchanted
+    Protected: '&6Ancient Protection'
+    Name: '&5&lProtection &b&lCrystal' #Name of the item
+    Lore: #Lore of the item
+      - '&7A rare crystal that is said to'
+      - '&7protect items from getting lost'
+      - '&7while the owners away in the after life.'
+      - ''
+      - '&7&l(&6&l!&7&l) &7Drag and drop on an item.'
+    GUIName: '&5&lProtection &b&lCrystal'
+    GUILore:
+      - '&7A rare crystal that is said to'
+      - '&7protect items from getting lost'
+      - '&7while the owners away in the after life.'
+      - ''
+      - '&eCost: &e&l$1000'
+  BlackSmith: #Options for the Black Smith
+    InGUI: False #In the GUI.
+    Slot: 1 #Slot it is in.
+    Item: '61' #Item that shows in the GUI
+    Glowing: False #Is it enchanted
+    Name: '&8&lThe Black Smith' #Name of the Item in the GUI
+    Lore: #Lore on the item.
+      - '&b>>&7&lClick to open&b<<'
+    GUIName: '&8&lThe Black Smith' #Name of the Black Smith's GUI
+    Results:
+      None: '&c&lNo Results' #Name of the item when there are no results in the Black Smith
+      Found: '&c&lCost: &6&l%Cost%XP' #The lore at the bottom of the item
+    Transaction: #Options for the pricing
+      Money/XP: XP #Costs XP or Money
+      Lvl/Total: Lvl #Uses Total xp or xp Levels
+      Costs: #Cost options
+        Power-Up: 5 #When a enchantment levels up 1 on an item
+        Add-Enchantment: 3 #When it adds an enchantment to the item from another item
+        Book-Upgrade: 5 #Leveling up a books power
+  Tinker: #Settings for Info item in the GUI
+    InGUI: True #Toggle whether it is in the /CE GUI or not
+    Slot: 5 #Slot it is in
+    Item: '145' #Item it is
+    Glowing: False #Whether it glows like its enchanted
+    Name: '&7&lThe &4&lCrazy &c&lTinkerer' #Name of the Item
+    Lore: #Lore of the item
+      - '&b>>&7&lClick to open&b<<'
+  Dust: #Settings for the Magical Dust
+    MysteryDust:
+      Item: '289' #Item mystery dust is
+      Name: '&7Mystery Dust' #Name of the dust
+      Lore: #Use %Percent% to set the percent
+        - '&a1-%Percent%% &7will be on a'
+        - '&aMagical AngelDust &7or &eMagical Fixing &7Dust'
+        - '&7&l(&6&l!&7&l) &7Right click'
+    SuccessDust:
+      InGUI: True #If you can buy it in the /CE Gui
+      GUIName: '&aMagical Angel Dust' #Name of the item in the GUI
+      GUILore: #Lore in the GUI.
+        - '&eCost: &a&l$50'
+        - '&7Dust allows you to bring'
+        - '&7Up your &aSuccess Rate'
+      Slot: 4 #Slot number it is in
+      Item: '353' #Item the dust is
+      Name: '&aMagical Angel Dust' #Name of the dust
+      Lore: #Lore for the dust
+        - '&a+%Percent%% Success Rate'
+        - '&7Apply to an Enchantment Book to'
+        - '&7Increase the Success Rate by &e%Percent%%'
+      PercentRange: #Range the success rate will be.
+        Max: 30 #Max percent
+        Min: 2 #Minimum percent
+    DestroyDust:
+      InGUI: True #If you can buy it in the /CE Gui
+      GUIName: '&eMagical Fixing Dust' #Name of the item in the GUI
+      GUILore: #Lore in the GUI.
+        - '&eCost: &a&l$50'
+        - '&7Dust allows you to bring'
+        - '&7Down your &4Destroy Rate'
+      Slot: 6 #Slot number it is in
+      Item: '353' #Item the dust is
+      Name: '&eMagical Fixing Dust' #Name of the dust
+      Lore: #Lore for the dust
+        - '&c-%Percent%% Destroy Rate'
+        - '&7Apply to an Enchantment Book to'
+        - '&7Decrease the Destroy Rate by &e%Percent%%'
+      PercentRange: #Range the destroy rate will be.
+        Max: 10 #Max percent
+        Min: 2 #Minimum percent
+  Info: #Settings for Info item in the GUI
+    InGUI: True #Toggle whether it is in the /CE GUI or not
+    Slot: 23 #Slot it is in
+    Item: '131' #Item it is
+    Glowing: True #Whether it glows like its enchanted
+    Name: '&e&lEnchantment Info' #Name of the Item
+    Lore: #Lore of the item
+      - '&b>>&7&lClick to view&b<<'
+  BlackScroll: #Settings for the Black Scrolls
+    Item: '351' #The item the Black Scroll can be
+    Name: '&8&l&nBlack Scroll' #The name of the Black Scroll
+    InGUI: False #Toggle being able to buy in the /CE Gui. Cost is controlled in the SignOptions section
+    GUIName: '&7&lBlack Scrolls Shop'
+    Slot: 11 #Slot you can buy the scroll at
+    Lore: #Lore of the item in the GUI
+      - '&c&lCost: &a&l$50'
+    SuccessChance: #Controls what the success chance will be when they get the book from the Black Scroll
+      Max: 75 #The Max percent
+      Min: 35 #The Minimum percent
+    DestroyChance: #Controls what the destroy chance will be when they get the book from the Black Scroll
+      Max: 25 #The Max percent
+      Min: 5 #The Minimum percent
+  WhiteScroll:
+    Item: '339' #The item the white scroll is.
+    Name: '&e&lWhite Scroll' #The name of the white scrolls.
+    InGUI: False #Toggle being able to buy in the /CE Gui. Cost is controlled in the SignOptions section
+    GUIName: '&e&lWhite Scrolls Shop'
+    Slot: 17 #Slot you can buy the scroll at
+    Lore: #Lore of the scroll in the GUI
+      - '&c&lCost: &a&l$50'
+    ProtectedName: '&b&lPROTECTED' #The lore that is added to protect an item.
+  EnchantmentOptions: #Options for enchanted books.
+    SuccessChance: True #Enable/Disable success rate on books.
+    DestroyChance: True #Enable/Disable destroy rate on books.
+    MaxAmountOfEnchantmentsToggle: True #Turn on an off the Max amount of enchantments
+    IncludeVanillaEnchantments: False #Count Vanilla enchantments also?
+    MaxAmountOfEnchantments: 5 #The Max amount of enchantments an item can have(Will not effect Vanilla Enchantments)
+  SignOptions: #Options for the Signs.
+    ProtectionCrystalStyle: 
+      Cost: 1000 #How much to buy it
+      Money/XP: Money #Use money or xp
+      Lvl/Total: XP #If using xp you can choose to use Lvls or Total xp
+      Line1: '&b&lCrazy Enchant'
+      Line2: '&b&lShop:'
+      Line3: '&5&lProtection &b&lCrystal'
+      Line4: '&c&lCost: &a&l$1000'
+    SuccessDustStyle: 
+      Cost: 50 #How much to buy a Magical Dust
+      Money/XP: Money #Use money or xp
+      Lvl/Total: XP #If using xp you can choose to use Lvls or Total xp
+      Line1: '&b&lCrazy Enchant'
+      Line2: '&b&lShop:'
+      Line3: '&e&lMagical Angel Dust'
+      Line4: '&c&lCost: &a&l$50'
+    DestroyDustStyle: 
+      Cost: 50 #How much to buy a Magical Dust
+      Money/XP: Money #Use money or xp
+      Lvl/Total: XP #If using xp you can choose to use Lvls or Total xp
+      Line1: '&b&lCrazy Enchant'
+      Line2: '&b&lShop:'
+      Line3: '&e&lMagical Fixing Dust'
+      Line4: '&c&lCost: &a&l$50'
+    CategoryShopStyle: #What the sign will look like. The price will be determined by the category you pick
+      Line1: '&b&lCrazy Enchant' #Line 1 of the sign
+      Line2: '&b&lShop:' #Line 2 of the sign
+      Line3: '&2&l%Category%' #Line 3 of the sign
+      Line4: '&c&lCost: &6&l%XP%XP' #Line 4 of the sign
+    BlackScrollStyle: 
+      Cost: 50 #How much to buy a black scroll
+      Money/XP: Money #Use money or xp
+      Lvl/Total: XP #If using xp you can choose to use Lvls or Total xp
+      Line1: '&b&lCrazy Enchant'
+      Line2: '&b&lShop:'
+      Line3: '&4&lBlack &8&lScrolls'
+      Line4: '&c&lCost: &a&l$50'
+    WhiteScrollStyle:
+      Cost: 50
+      Money/XP: Money
+      Lvl/Total: XP
+      Line1: '&b&lCrazy Enchant'
+      Line2: '&b&lShop:'
+      Line3: '&f&lWhite &b&lScrolls'
+      Line4: '&c&lCost: &a&l$50'
+  GUICustomization: #This allows you to customize unclickable items into you GUI.
+    - 'Slot:1, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:2, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:3, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:7, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:8, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:9, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:10, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:18, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:19, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:20, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:21, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:22, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:24, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:25, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:26, Item:160:0, Name: , Lore:&7Border'
+    - 'Slot:27, Item:160:0, Name: , Lore:&7Border'
+Categories: #You can make as many different categories as you want
+  T1: #Name of the category
+    Name: '&c&l&nTier 1' #Name in the GUI
+    Slot: 12 #The Slot number the item will be in
+    Lore: #The lore of the Item
+      - '&eCost: &6&l20 XP'
+    Item: '266' #The id for the item
+    Lvl/Total: Lvl #You can choose Lvl or Total, Lvl uses XP lvls and Total uses the total XP the player has
+    XP: 20 #How much the Books cost
+    LostBook: #Controls the Lost Book shop for this tier
+      InGUI: False #If it shows in the /CE Gui
+      Slot: 1 #Slot it will be in
+      Item: '340' #The item that is showen in the GUI
+      Glowing: False #Is it enchanted
+      Name: '&8&l&nLost&c&l Tier1 &8&l&nBooks' #Name of the item
+      Lore: #Lore on the item
+        - '&7These are lost books that are'
+        - '&7Said to be &c&lTier1 &7Enchantment books.'
+        - '&7But no one has tried to clean the books yet.'
+        - '&7Will you be the one to clean the books?'
+        - ''
+        - '&c&lCost: &6&l$1000'
+      Money/XP: Money #Costs money or XP
+      Lvl/Total: Lvl #If XP then Levels or Total XP
+      Cost: 1000 #The Price of the book
+    EnchOptions: #Enchantment Options
+      SuccessPercent: #The range for the success rate that the enchantment will have
+        Max: 90 #The max success rate
+        Min: 40 #The min success rate
+      DestroyPercent: #The range for the destroy rate that the enchantment will have
+        Max: 10 #The max destroy rate
+        Min: 0 #The min destroy rate
+      MaxLvlToggle: True #Turn on and off Max Level cap
+      LvlRange: #The range of lvls that can be found in the Category.
+        Max: 2
+        Min: 1
+  T2:
+    Name: '&c&l&nTier 2'
+    Slot: 14
+    Lore:
+      - '&eCost: &6&l40 XP'
+    Item: '264'
+    Lvl/Total: Lvl
+    XP: 40
+    LostBook:
+      InGUI: False
+      Slot: 2
+      Item: '340'
+      Glowing: False
+      Name: '&8&l&nLost&c&l Tier2 &8&l&nBooks'
+      Lore:
+        - '&7These are lost books that are'
+        - '&7Said to be &c&lTier2 &7Enchantment books.'
+        - '&7But no one has tried to clean the books yet.'
+        - '&7Will you be the one to clean the books?'
+        - ''
+        - '&c&lCost: &6&l$2000'
+      Money/XP: Money
+      Lvl/Total: Lvl
+      Cost: 2000
+    EnchOptions:
+      SuccessPercent:
+        Max: 70
+        Min: 35
+      DestroyPercent:
+        Max: 25
+        Min: 10
+      MaxLvlToggle: True
+      LvlRange:
+        Max: 3
+        Min: 2
+  T3:
+    Name: '&c&l&nTier 3'
+    Slot: 16
+    Lore:
+      - '&eCost: &6&l60 XP'
+    Item: '388'
+    Lvl/Total: Lvl
+    XP: 60
+    LostBook:
+      InGUI: False
+      Slot: 3
+      Item: '340'
+      Glowing: False
+      Name: '&8&l&nLost&c&l Tier3 &8&l&nBooks'
+      Lore:
+        - '&7These are lost books that are'
+        - '&7Said to be &c&lTier3 &7Enchantment books.'
+        - '&7But no one has tried to clean the books yet.'
+        - '&7Will you be the one to clean the books?'
+        - ''
+        - '&c&lCost: &6&l$3000'
+      Money/XP: Money
+      Lvl/Total: Lvl
+      Cost: 3000
+    EnchOptions:
+      SuccessPercent:
+        Max: 50
+        Min: 25
+      DestroyPercent:
+        Max: 35
+        Min: 15
+      MaxLvlToggle: True
+      LvlRange:
+        Max: 5
+        Min: 3
